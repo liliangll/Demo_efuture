@@ -1,0 +1,980 @@
+2018-07-16 09:28:51 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 8512 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:28:51 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:28:51 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:29:28 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 39.42 seconds (JVM running for 44.89) 
+2018-07-16 09:31:07 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 09:31:07 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 09:31:07 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 09:31:07 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 09:31:07 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:31:07 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:31:43 [http-nio-8080-exec-6] ERROR c.e.d.config.GlobalExceptionHandler : 
+ java.lang.RuntimeException: token无效，请重新登录
+	at com.efuture.demo.config.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:47)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser_COUNT : 
+ ==>  Preparing: SELECT count(0) FROM driverSchool d LEFT OUTER JOIN cityArea c ON d.cityAreaId = c.cid  
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser_COUNT : 
+ ==> Parameters:  
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser_COUNT : 
+ <==      Total: 1 
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser : 
+ ==>  Preparing: SELECT d.did, d.dname , d.address , d.phone , c.cid , c.name FROM driverSchool d left outer join cityArea c on d.cityAreaId=c.cid limit ?,?  
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser : 
+ ==> Parameters: 0(Integer), 2(Integer) 
+2018-07-16 09:32:28 [http-nio-8080-exec-5] DEBUG c.e.d.m.D.selectAllUser : 
+ <==      Total: 2 
+2018-07-16 09:36:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 8436 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:36:35 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:36:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:36:46 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 11.58 seconds (JVM running for 14.497) 
+2018-07-16 09:37:10 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 09:37:10 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 09:37:10 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:37:15 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 09:37:15 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 09:37:15 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:37:37 [http-nio-8080-exec-5] ERROR c.e.d.config.GlobalExceptionHandler : 
+ java.lang.RuntimeException: token无效，请重新登录
+	at com.efuture.demo.config.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:47)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 09:37:50 [http-nio-8080-exec-10] ERROR c.e.d.config.GlobalExceptionHandler : 
+ java.lang.RuntimeException: token无效，请重新登录
+	at com.efuture.demo.config.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:47)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 09:38:10 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:38:10 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:38:10 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.d.m.D.selectDname : 
+ ==>  Preparing: SELECT d.did, d.dname , d.address , d.phone , c.cid , c.name FROM driverSchool d left outer join cityArea c on d.cityAreaId=c.cid WHERE d.dname like concat('%',?,'%')  
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.d.m.D.selectDname : 
+ ==> Parameters: 2(String) 
+2018-07-16 09:38:35 [http-nio-8080-exec-9] DEBUG c.e.d.m.D.selectDname : 
+ <==      Total: 2 
+2018-07-16 09:39:47 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 8436 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:39:47 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:39:47 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:39:50 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 3.026 seconds (JVM running for 198.814) 
+2018-07-16 09:50:53 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 09:50:53 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 09:50:53 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==>  Preparing: SELECT post.id, post.author_id , post.title , post.content , post.create_time , post.update_time, `user`.id as author__id, `user`.`name` as author__name FROM post LEFT JOIN `user` ON `user`.id=post.author_id WHERE post.id=?  
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==> Parameters: 2(Integer) 
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ <==      Total: 0 
+2018-07-16 09:51:14 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.PostApi : 
+ java.lang.NullPointerException: 文章不存在 
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==>  Preparing: SELECT post.id, post.author_id , post.title , post.content , post.create_time , post.update_time, `user`.id as author__id, `user`.`name` as author__name FROM post LEFT JOIN `user` ON `user`.id=post.author_id WHERE post.id=?  
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==> Parameters: 1(Integer) 
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ <==      Total: 0 
+2018-07-16 09:51:19 [http-nio-8080-exec-9] DEBUG com.efuture.demo.api.PostApi : 
+ java.lang.NullPointerException: 文章不存在 
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==>  Preparing: SELECT post.id, post.author_id , post.title , post.content , post.create_time , post.update_time, `user`.id as author__id, `user`.`name` as author__name FROM post LEFT JOIN `user` ON `user`.id=post.author_id WHERE post.id=?  
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:51:28 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.PostMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:51:28 [http-nio-8080-exec-7] INFO  com.efuture.demo.api.PostApi : 
+ ------------findById----------- 3 
+2018-07-16 09:51:54 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:51:54 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:51:54 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:52:05 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 12.173 seconds (JVM running for 15.865) 
+2018-07-16 09:52:20 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 09:52:20 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 09:52:20 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 09:53:12 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:53:12 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:53:12 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:53:16 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:53:16 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:53:16 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:53:30 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 14.498 seconds (JVM running for 101.282) 
+2018-07-16 09:53:33 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:53:33 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:53:33 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:53:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 2.209 seconds (JVM running for 106.04) 
+2018-07-16 09:53:39 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:53:39 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:53:39 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:53:45 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 1220 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:53:45 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:53:45 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:57:56 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 16124 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:57:56 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:57:56 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:58:04 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 9.256 seconds (JVM running for 12.147) 
+2018-07-16 09:59:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 2368 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 09:59:35 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 09:59:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 09:59:43 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 9.925 seconds (JVM running for 12.018) 
+2018-07-16 10:02:24 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 16832 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:02:24 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:02:24 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:02:36 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 12.534 seconds (JVM running for 16.785) 
+2018-07-16 10:04:44 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:04:44 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:04:44 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:04:52 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 9.231 seconds (JVM running for 16.531) 
+2018-07-16 10:04:56 [http-nio-8080-exec-1] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:04:57 [http-nio-8080-exec-2] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:05:00 [http-nio-8080-exec-3] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:05:16 [http-nio-8080-exec-5] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:05:20 [http-nio-8080-exec-6] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:05:27 [http-nio-8080-exec-8] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:05:34 [http-nio-8080-exec-10] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:08:01 [http-nio-8080-exec-2] ERROR c.e.d.config.GlobalExceptionHandler : 
+ com.alibaba.fastjson.JSONException: error parse new
+	at com.alibaba.fastjson.parser.JSONLexerBase.scanNullOrNew(JSONLexerBase.java:2505)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextToken(JSONLexerBase.java:165)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:189)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.<init>(DefaultJSONParser.java:160)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:323)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:307)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:270)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:370)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:452)
+	at com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.read(FastJsonHttpMessageConverter.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:201)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 10:20:06 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:20:06 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:20:06 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:20:10 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:20:10 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:20:10 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:20:12 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 1.903 seconds (JVM running for 936.328) 
+2018-07-16 10:22:51 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:22:51 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:22:51 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:23:01 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:23:01 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:23:01 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:23:03 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 1.602 seconds (JVM running for 1106.828) 
+2018-07-16 10:27:21 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7424 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 10:27:21 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 10:27:21 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 10:27:23 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 2.688 seconds (JVM running for 1367.332) 
+2018-07-16 16:57:23 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 16:57:23 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 16:57:23 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 16:57:34 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 13.963 seconds (JVM running for 18.227) 
+2018-07-16 17:00:53 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:00:53 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:00:53 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:00:56 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 2.695 seconds (JVM running for 220.366) 
+2018-07-16 17:00:59 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:00:59 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:00:59 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:01:03 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 3.973 seconds (JVM running for 227.307) 
+2018-07-16 17:01:08 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:01:08 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:01:08 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:01:13 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 4.778 seconds (JVM running for 237.125) 
+2018-07-16 17:01:22 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:01:22 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:01:22 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:01:26 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 4.055 seconds (JVM running for 250.376) 
+2018-07-16 17:01:29 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:01:29 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:01:29 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:01:31 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 2.269 seconds (JVM running for 255.391) 
+2018-07-16 17:01:39 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 17:01:39 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 17:01:39 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 17:01:58 [http-nio-8080-exec-3] DEBUG c.e.d.c.AuthenticationInterceptor : 
+ ------------token------>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzIn0.1CPN17EJxsfdnYGM7kGoGa-OyHfyYT9AqcYnyTunnBI 
+2018-07-16 17:01:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 17:01:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 17:01:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG c.e.d.m.D.selectAllUser : 
+ ==>  Preparing: SELECT d.did, d.dname , d.address , d.phone , c.cid , c.name FROM driverSchool d left outer join cityArea c on d.cityAreaId=c.cid  
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG c.e.d.m.D.selectAllUser : 
+ ==> Parameters:  
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG c.e.d.m.D.selectAllUser : 
+ <==      Total: 6 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------芙蓉区 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------天心区 
+2018-07-16 17:01:59 [http-nio-8080-exec-3] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------天心区 
+2018-07-16 17:03:14 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:03:14 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:03:14 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:03:16 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 1.818 seconds (JVM running for 360.749) 
+2018-07-16 17:03:19 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:03:19 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:03:19 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:03:21 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 2.309 seconds (JVM running for 365.965) 
+2018-07-16 17:03:58 [http-nio-8080-exec-8] DEBUG c.e.d.c.AuthenticationInterceptor : 
+ ------------token------>null 
+2018-07-16 17:03:58 [http-nio-8080-exec-8] ERROR c.e.d.config.GlobalExceptionHandler : 
+ java.lang.RuntimeException: 无token，请重新登录
+	at com.efuture.demo.config.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:46)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-07-16 17:04:22 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-07-16 17:04:22 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 123(String) 
+2018-07-16 17:04:22 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.d.c.AuthenticationInterceptor : 
+ ------------token------>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzIn0.1CPN17EJxsfdnYGM7kGoGa-OyHfyYT9AqcYnyTunnBI 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.d.m.D.selectAllUser : 
+ ==>  Preparing: SELECT d.did, d.dname , d.address , d.phone , c.cid , c.name FROM driverSchool d left outer join cityArea c on d.cityAreaId=c.cid  
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.d.m.D.selectAllUser : 
+ ==> Parameters:  
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG c.e.d.m.D.selectAllUser : 
+ <==      Total: 6 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------芙蓉区 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------开福区 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------天心区 
+2018-07-16 17:04:29 [http-nio-8080-exec-1] DEBUG com.efuture.demo.api.ExcelApi : 
+ ------------Name-2-------------天心区 
+2018-07-16 17:05:29 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:05:29 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:05:29 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-07-16 17:05:32 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Started DemoApplication in 3.064 seconds (JVM running for 496.206) 
+2018-07-16 17:05:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ Starting DemoApplication on DESKTOP-TCBP6TK with PID 7788 (D:\efuture\demo\target\classes started by asus in D:\efuture\demo) 
+2018-07-16 17:05:35 [restartedMain] DEBUG com.efuture.demo.DemoApplication : 
+ Running with Spring Boot v1.5.14.RELEASE, Spring v4.3.18.RELEASE 
+2018-07-16 17:05:35 [restartedMain] INFO  com.efuture.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.efuture.demo.mapper.DriverSchoolMapper">
+	
+	<resultMap type="DriverSchool" id="DriverSchoolMap">
+		<id property="did" column="did"/>
+		<result property="dname" column="dname"/>
+		<result property="address" column="address"/>
+		<result property="phone" column="phone"/>
+	<!--	<result property="cityAreaId" column="cityAreaId"/>-->
+		<!-- 多对一 -->
+		<association property="cityArea" javaType="CityArea">
+			<id property="cid" column="cid"/>
+			<result property="name" column="name"/>
+		</association>
+	</resultMap> 
+
+
+	<select id="selectDname" resultMap="DriverSchoolMap"  parameterType="java.lang.String">
+		<include refid="select-driver" />
+		<where>
+			<if test="_parameter!=null">
+				and d.dname like concat('%',#{dname},'%')
+			</if>
+		</where>
+	</select>
+
+	<select id="selectAllUser"
+			resultType="DriverSchool" resultMap="DriverSchoolMap">
+		<include refid="select-driver" />
+	</select>
+
+	<delete id="del" parameterType="int">
+		delete from driverschool where did=#{did}
+	</delete>
+	
+	<insert id="insert" parameterType="DriverSchool">
+		insert into driverschool(dname,cityAreaId,address,phone)
+		values(#{dname},#{cityArea.cid},#{address},#{phone})
+	</insert>
+	
+	<select id="getDetail" parameterType="int" resultMap="DriverSchoolMap">
+		<include refid="select-driver" />
+		<where>
+				<if test="did!=null">
+					  d.did = #{did}
+				</if>
+		</where>
+	</select>
+	
+	<update id="update" parameterType="DriverSchool" >
+	 	UPDATE  driverSchool 
+	 	<set>
+	 		<if test="dname!=null">
+	 			dname=#{dname},
+	 		</if>
+	 		<if test="cityArea!=null and cityArea.cid!=-1">
+	 			 cityAreaId=#{cityArea.cid},
+	 		</if>
+	 		<if test="address!=null">
+	 			 address=#{address},
+	 		</if>
+	 		<if test="phone!=null">
+	 			 phone=#{phone},
+	 		</if>
+	 	</set>
+		WHERE did=#{did}
+	</update>
+	<sql id="select-driver" >
+		SELECT
+		<!-- 驾校表 -->
+		d.did,
+		d.dname ,
+		d.address ,
+		d.phone ,
+		<!-- 区域表 -->
+		c.cid ,
+		c.name
+		FROM driverSchool d
+		left outer join cityArea c on d.cityAreaId=c.cid
+	</sql>
+</mapper>

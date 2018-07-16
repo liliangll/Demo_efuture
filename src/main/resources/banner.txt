@@ -1,0 +1,14 @@
+${AnsiBackground.BRIGHT_CYAN}
+${AnsiColor.BRIGHT_RED}                      !                      天地山青   ${AnsiColor.GREEN}                      !
+${AnsiColor.BRIGHT_RED}                     /^\                        ${AnsiColor.BLACK}道法无常                     /^\
+${AnsiColor.BRIGHT_RED}                   /     \                   天地无极   ${AnsiColor.GREEN}                   /     \
+${AnsiColor.BRIGHT_RED}   |            | (       ) |            |      ${AnsiColor.BLACK}乾坤戒法   |            | (       ) |            |
+${AnsiColor.BRIGHT_RED}  /^\  |       /^\ \     / /^\       |  /^\  元阳入体   ${AnsiColor.GREEN}  /^\  |       /^\ \     / /^\       |  /^\
+${AnsiColor.BRIGHT_RED}  |O| /^\     (   )|-----|(   )     /^\ |O|     ${AnsiColor.BLACK}五毒不侵  |O| /^\     (   )|-----|(   )     /^\ |O|
+${AnsiColor.BRIGHT_RED}  |_| |-| |^-^|---||-----||---|^-^| |-| |_|  九阳之体   ${AnsiColor.GREEN}  |_| |-| |^-^|---||-----||---|^-^| |-| |_|
+${AnsiColor.BRIGHT_RED}  |O| |O| |/^\|/^\||  |  ||/^\|/^\| |O| |O|     ${AnsiColor.BLACK}化缘神功  |O| |O| |/^\|/^\||  |  ||/^\|/^\| |O| |O|
+${AnsiColor.BRIGHT_RED}  |-| |-| ||_|||_||| /^\ |||_|||_|| |-| |-|  邪魔退散   ${AnsiColor.GREEN}  |-| |-| ||_|||_||| /^\ |||_|||_|| |-| |-|
+${AnsiColor.BRIGHT_RED}  |O| |O| |/^\|/^\||(   )||/^\|/^\| |O| |O|     ${AnsiColor.BLACK}永不宕机  |O| |O| |/^\|/^\||(   )||/^\|/^\| |O| |O|
+${AnsiColor.BRIGHT_RED}  |-| |-| ||_|||_||||   ||||_|||_|| |-| |-|  永无八哥   ${AnsiColor.GREEN}  |-| |-| ||_|||_||||   ||||_|||_|| |-| |-|
+${AnsiColor.BRIGHT_CYAN}
+${AnsiBackground.BRIGHT_CYAN}

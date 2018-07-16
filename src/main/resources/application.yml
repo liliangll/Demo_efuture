@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: abc
+debug: true
+
+mybatis:
+  type-aliases-package: com.efuture.demo.model
+  config-location: classpath:mybatis.xml
+

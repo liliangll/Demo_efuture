@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        var token = window.localStorage.getItem("token");
+        function Login() {
+            $.ajax({
+                url: "http://localhost:8080/api/authentication/login",
+                data: {
+                    "name": "123",
+                    "password": "321"
+                },
+                dataType: "json",
+                type: "POST",
+                async: true,
+                success: function (data) {
+                    var status = data.result_status;
+                    var da = data.result_data;
+                    alert("status := " + status + ",\r\n  token := " + da);
+                    window.localStorage.setItem("token", da);
+                }, error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("1111111111111111");
+                }
+            })
+        };
+
+        $(function () {
+            Login();
+        })
+    </script>
+
+    </body>
+
+    </html>
